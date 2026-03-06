@@ -1,0 +1,79 @@
+# .gitignore for BedrockModAPI
+
+# Build directories
+build/
+cmake-build-*/
+out/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.sln.docstates
+*.vcxproj.filters
+*.vcxproj.user
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Compiled files
+*.dll
+*.exe
+*.obj
+*.o
+*.lib
+*.exp
+*.pdb
+*.ilk
+*.idb
+*.log
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# Dependencies (should be downloaded separately)
+lib/minhook/
+lib/kiero/
+lib/libhat/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+*.iml
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Mods directory (user mods)
+mods/*.dll
+!mods/.gitkeep
+
+# Documentation build
+docs/_build/
+docs/.doctrees/
+
+# Package files
+*.zip
+*.7z
+*.tar.gz
+
+# Test files
+test_output/
+*.test
